@@ -4,6 +4,14 @@
 - Active Branches: noetic, humble, main
 - Legacy Branches: *-devel
 
+## Fork Maintainer : Jack e1528443@u.nus.edu
+
+### Feature:
+### multi robot launch for jazzy
+#### edit the params file in turtlebot3_simulations/turtlebot3_gazebo/params/multirobot.yaml
+#### source install/setup.bash
+#### ros2 launch turtlebot3_gazebo multi_robot.launch.py
+
 ## Open Source Projects Related to TurtleBot3
 - [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
 - [turtlebot3_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
