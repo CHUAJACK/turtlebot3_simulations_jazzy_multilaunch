@@ -1,0 +1,12 @@
+world: "turtlebot3" #turtlebot3 OR empty  
+
+robots:
+    - namespace: "tb3_1"
+      x_pose : -1.92
+      y_pose : -0.78
+    - namespace: 'tb3_2'
+      x_pose :  0.37
+      y_pose : -2.17
+    - namespace: 'tb3_3'
+      x_pose :  2.14  
+      y_pose :  0.61
