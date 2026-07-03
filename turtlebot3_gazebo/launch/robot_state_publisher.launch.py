@@ -64,5 +64,13 @@ def generate_launch_description():
                 # publish (e.g. "tb3_1/base_footprint") so the TF tree connects.
                 'frame_prefix': [namespace, '/'],
             }],
+            # tf2_ros broadcasters publish to the ABSOLUTE topics /tf and
+            # /tf_static, so the node namespace alone does not scope them.
+            # Remap them to relative names so they resolve under the namespace
+            # (e.g. /tb3_1/tf, /tb3_1/tf_static) instead of leaking to global /tf.
+            remappings=[
+                ('/tf', 'tf'),
+                ('/tf_static', 'tf_static'),
+            ],
         ),
     ])
